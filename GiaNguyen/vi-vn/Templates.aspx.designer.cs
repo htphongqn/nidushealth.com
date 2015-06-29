@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YeuThietKeWeb.vi_vn {
+namespace nidushealth.com.vi_vn {
     
     
     public partial class Templates {
@@ -28,6 +28,6 @@ namespace YeuThietKeWeb.vi_vn {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Templates Templates1;
+        protected global::nidushealth.com.UIs.Templates Templates1;
     }
 }

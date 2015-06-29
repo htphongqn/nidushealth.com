@@ -138,3 +138,10 @@ H:\SoftWeb\yeuthietkeweb.com\Controller\bin\Debug\Model.pdb
 H:\SoftWeb\yeuthietkeweb.com\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
 H:\SoftWeb\yeuthietkeweb.com\Controller\obj\Debug\Controller.dll
 H:\SoftWeb\yeuthietkeweb.com\Controller\obj\Debug\Controller.pdb
+E:\WWW_US\nidushealth.com\Controller\bin\Debug\Controller.dll
+E:\WWW_US\nidushealth.com\Controller\bin\Debug\Controller.pdb
+E:\WWW_US\nidushealth.com\Controller\bin\Debug\Model.dll
+E:\WWW_US\nidushealth.com\Controller\bin\Debug\Model.pdb
+E:\WWW_US\nidushealth.com\Controller\obj\Debug\Controller.csprojResolveAssemblyReference.cache
+E:\WWW_US\nidushealth.com\Controller\obj\Debug\Controller.dll
+E:\WWW_US\nidushealth.com\Controller\obj\Debug\Controller.pdb

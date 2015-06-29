@@ -8,7 +8,7 @@ using vpro.functions;
 using System.Web.UI.HtmlControls;
 using Controller;
 
-namespace YeuThietKeWeb.vi_vn
+namespace nidushealth.com.vi_vn
 {
     public partial class PrintPage : System.Web.UI.Page
     {

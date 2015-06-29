@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuMobile.ascx.cs" Inherits="YeuThietKeWeb.UIs.MenuMobile" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuMobile.ascx.cs" Inherits="nidushealth.com.UIs.MenuMobile" %>
 
 <div id="menu_button">
 <div class="menu_icon"></div>

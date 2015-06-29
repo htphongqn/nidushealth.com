@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Controller;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class Support : System.Web.UI.UserControl
     {

@@ -8,7 +8,7 @@ using Controller;
 using System.Web.UI.HtmlControls;
 using vpro.functions;
 
-namespace YeuThietKeWeb.vi_vn
+namespace nidushealth.com.vi_vn
 {
     public partial class Home : System.Web.UI.Page
     {

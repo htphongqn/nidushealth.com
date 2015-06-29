@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YeuThietKeWeb {
+namespace nidushealth.com {
     
     
     public partial class deufult {

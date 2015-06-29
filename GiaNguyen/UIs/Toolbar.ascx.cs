@@ -10,7 +10,7 @@ using System.Net.Mail;
 using GiaNguyen.Components;
 using Controller;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class Toolbar : System.Web.UI.UserControl
     {

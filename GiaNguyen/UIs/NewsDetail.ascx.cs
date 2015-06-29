@@ -9,7 +9,7 @@ using Controller;
 using GiaNguyen.Components;
 using System.Collections;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class NewsDetail : System.Web.UI.UserControl
     {

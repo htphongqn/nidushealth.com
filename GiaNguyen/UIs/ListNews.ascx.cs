@@ -8,7 +8,7 @@ using vpro.functions;
 using GiaNguyen.Components;
 using Controller;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class ListNews : System.Web.UI.UserControl
     {

@@ -211,3 +211,9 @@ H:\SoftWeb\yeuthietkeweb.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.e
 H:\SoftWeb\yeuthietkeweb.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.eshop.cpanel.dll.licenses
 H:\SoftWeb\yeuthietkeweb.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.eshop.cpanel.dll
 H:\SoftWeb\yeuthietkeweb.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.eshop.cpanel.pdb
+E:\WWW_US\nidushealth.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\bin\vpro.eshop.cpanel.dll
+E:\WWW_US\nidushealth.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\bin\vpro.eshop.cpanel.pdb
+E:\WWW_US\nidushealth.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.eshop.cpanel.csprojResolveAssemblyReference.cache
+E:\WWW_US\nidushealth.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.eshop.cpanel.dll.licenses
+E:\WWW_US\nidushealth.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.eshop.cpanel.dll
+E:\WWW_US\nidushealth.com\GiaNguyen\Cpanel\vpro.eshop.cpanel\obj\Debug\vpro.eshop.cpanel.pdb

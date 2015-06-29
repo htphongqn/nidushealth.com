@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Support.ascx.cs" Inherits="YeuThietKeWeb.UIs.Support" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Support.ascx.cs" Inherits="nidushealth.com.UIs.Support" %>
 
 
 <script type='text/javascript'>

@@ -6,7 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 
-namespace YeuThietKeWeb.vi_vn
+namespace nidushealth.com.vi_vn
 {
     public partial class Regis : System.Web.UI.Page
     {

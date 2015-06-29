@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="YeuThietKeWeb.Master.Default" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="nidushealth.com.Master.Default" %>
 
 
 <%@ Register src="../UIs/Support.ascx" tagname="Support" tagprefix="uc1" %>
@@ -72,7 +72,7 @@
       <!-- Begin of footer-->
       <footer>
         <!--Copyright-->
-        <div class="five columns">Copyright © 2015 By YeuThietKeWeb.com </div>
+        <div class="five columns">Copyright © 2015 By nidushealth.com.com </div>
         <!--end Copyright-->
         <!--Static-->
         <uc13:Static ID="Static1" runat="server" />

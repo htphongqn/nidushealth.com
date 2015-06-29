@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YeuThietKeWeb.UIs {
+namespace nidushealth.com.UIs {
     
     
     public partial class Search {
@@ -46,7 +46,7 @@ namespace YeuThietKeWeb.UIs {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.MenuLeft MenuLeft1;
+        protected global::nidushealth.com.UIs.MenuLeft MenuLeft1;
         
         /// <summary>
         /// HomeAdvisory1 control.
@@ -55,6 +55,6 @@ namespace YeuThietKeWeb.UIs {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.HomeAdvisory HomeAdvisory1;
+        protected global::nidushealth.com.UIs.HomeAdvisory HomeAdvisory1;
     }
 }

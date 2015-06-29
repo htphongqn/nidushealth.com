@@ -8,7 +8,7 @@ using Controller;
 using GiaNguyen.Components;
 using vpro.functions;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class Search : System.Web.UI.UserControl
     {

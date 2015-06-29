@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using vpro.functions;
 using Controller;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class MenuTop : System.Web.UI.UserControl
     {

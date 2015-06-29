@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Templates.ascx.cs" Inherits="YeuThietKeWeb.UIs.Templates" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Templates.ascx.cs" Inherits="nidushealth.com.UIs.Templates" %>
 
 
 <div class="inner_side">

@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ListNews.ascx.cs" Inherits="YeuThietKeWeb.UIs.ListNews" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ListNews.ascx.cs" Inherits="nidushealth.com.UIs.ListNews" %>
 
 <%@ Register src="Path.ascx" tagname="Path" tagprefix="uc1" %>
 <%@ Register src="HomeAdvisory.ascx" tagname="HomeAdvisory" tagprefix="uc2" %>

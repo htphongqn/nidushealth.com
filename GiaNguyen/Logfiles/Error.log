@@ -5,7 +5,7 @@ System.InvalidOperationException: Only one instance of a ScriptManager can be ad
    at System.Web.UI.Control.InitRecursive(Control namingContainer)
    at System.Web.UI.Control.AddedControl(Control control, Int32 index)
    at System.Web.UI.ControlCollection.Add(Control child)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 55
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 55
 -----------------------------------------------
 [Date 17/03/2015 11:17:36]
 System.InvalidOperationException: Only one instance of a ScriptManager can be added to the page.
@@ -14,7 +14,7 @@ System.InvalidOperationException: Only one instance of a ScriptManager can be ad
    at System.Web.UI.Control.InitRecursive(Control namingContainer)
    at System.Web.UI.Control.AddedControl(Control control, Int32 index)
    at System.Web.UI.ControlCollection.Add(Control child)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 55
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 55
 -----------------------------------------------
 [Date 17/03/2015 11:17:32]
 System.InvalidOperationException: Only one instance of a ScriptManager can be added to the page.
@@ -23,7 +23,7 @@ System.InvalidOperationException: Only one instance of a ScriptManager can be ad
    at System.Web.UI.Control.InitRecursive(Control namingContainer)
    at System.Web.UI.Control.AddedControl(Control control, Int32 index)
    at System.Web.UI.ControlCollection.Add(Control child)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 55
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 55
 -----------------------------------------------
 [Date 13/02/2015 11:58:55]
 System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified
@@ -85,7 +85,7 @@ System.Web.HttpParseException (0x80004005): The file '/UIs/CategoriesSlideLeft.a
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 36
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 36
 -----------------------------------------------
 [Date 12/02/2015 01:51:03]
 System.Web.HttpParseException (0x80004005): The file '/UIs/CategoriesSlideLeft.ascx' does not exist. ---> System.Web.HttpParseException (0x80004005): The file '/UIs/CategoriesSlideLeft.ascx' does not exist. ---> System.Web.HttpException (0x80004005): The file '/UIs/CategoriesSlideLeft.ascx' does not exist.
@@ -114,7 +114,7 @@ System.Web.HttpParseException (0x80004005): The file '/UIs/CategoriesSlideLeft.a
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 36
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\Tran_Dinh_My\tran_dinh_my_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 36
 -----------------------------------------------
 [Date 28/01/2015 09:07:07]
 System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The network path was not found
@@ -296,7 +296,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 03:21:37]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -305,7 +305,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 03:21:34]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -314,7 +314,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 02:56:13]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -323,7 +323,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 02:56:10]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -332,7 +332,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 02:56:05]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -341,7 +341,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 02:55:58]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -350,7 +350,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 02:55:55]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -359,7 +359,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 13/10/2014 02:55:48]
 System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not exist.
@@ -368,7 +368,7 @@ System.Web.HttpException (0x80004005): The file '/UIs/ListProject.ascx' does not
    at System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
    at System.Web.UI.TemplateControl.LoadControl(VirtualPath virtualPath)
    at System.Web.UI.TemplateControl.LoadControl(String virtualPath)
-   at YeuThietKeWeb.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
+   at nidushealth.com.vi_vn.Page_Default.Page_Load(Object sender, EventArgs e) in D:\ThanhPT\ve_may_bay_web\GiaNguyen\vi-vn\Page_Default.aspx.cs:line 32
 -----------------------------------------------
 [Date 07/10/2014 05:47:04]
 System.Data.SqlClient.SqlException (0x80131904): A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server) ---> System.ComponentModel.Win32Exception (0x80004005): The system cannot find the file specified

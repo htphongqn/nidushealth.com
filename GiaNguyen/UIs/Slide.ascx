@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Slide.ascx.cs" Inherits="YeuThietKeWeb.UIs.Slide" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Slide.ascx.cs" Inherits="nidushealth.com.UIs.Slide" %>
 
 <div class="slider-wrapper theme-default cf">
     <div id="slider" class="nivoSlider"> 

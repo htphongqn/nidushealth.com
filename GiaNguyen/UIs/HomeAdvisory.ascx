@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeAdvisory.ascx.cs" Inherits="YeuThietKeWeb.UIs.HomeAdvisory" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HomeAdvisory.ascx.cs" Inherits="nidushealth.com.UIs.HomeAdvisory" %>
 
 
 <h2 class="box_Tab"><span class="font1">Yêu cầu tư vấn</span></h2>

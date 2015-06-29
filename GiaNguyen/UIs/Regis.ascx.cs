@@ -8,7 +8,7 @@ using GiaNguyen.Components;
 using Controller;
 using vpro.functions;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class Regis : System.Web.UI.UserControl
     {

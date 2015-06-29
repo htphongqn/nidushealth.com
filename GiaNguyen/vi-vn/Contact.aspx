@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Default.Master" AutoEventWireup="true"
-    CodeBehind="Contact.aspx.cs" Inherits="YeuThietKeWeb.vi_vn.Contact" %>
+    CodeBehind="Contact.aspx.cs" Inherits="nidushealth.com.vi_vn.Contact" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link href="../vi-vn/Styles/contact.css" rel="stylesheet" type="text/css" />

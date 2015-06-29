@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuLeft.ascx.cs" Inherits="YeuThietKeWeb.UIs.MenuLeft" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuLeft.ascx.cs" Inherits="nidushealth.com.UIs.MenuLeft" %>
 
 <div id="cphMain_ctl00_vi1_box_menu" class="box">
     <ul id="vertical_menu">

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace YeuThietKeWeb.Master
+namespace nidushealth.com.Master
 {
     public partial class Index : System.Web.UI.MasterPage
     {

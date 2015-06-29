@@ -10,7 +10,7 @@ using System.Web.UI.HtmlControls;
 using System.IO;
 using vpro.functions;
 
-namespace YeuThietKeWeb.vi_vn
+namespace nidushealth.com.vi_vn
 {
     public partial class Contact : System.Web.UI.Page
     {

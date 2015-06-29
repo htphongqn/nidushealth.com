@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NewsEvent.ascx.cs" Inherits="YeuThietKeWeb.UIs.NewsEvent" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="NewsEvent.ascx.cs" Inherits="nidushealth.com.UIs.NewsEvent" %>
 
 <div class="one-third column">
     <div class="col_menuFooter" id="news_home">

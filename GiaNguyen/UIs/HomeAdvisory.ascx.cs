@@ -9,7 +9,7 @@ using GiaNguyen.Components;
 using System.Web.UI.HtmlControls;
 using vpro.functions;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class HomeAdvisory : System.Web.UI.UserControl
     {

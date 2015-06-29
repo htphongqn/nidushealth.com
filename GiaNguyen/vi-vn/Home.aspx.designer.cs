@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YeuThietKeWeb.vi_vn {
+namespace nidushealth.com.vi_vn {
     
     
     public partial class Home {

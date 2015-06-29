@@ -9,7 +9,7 @@ using vpro.functions;
 using Controller;
 using GiaNguyen.Components;
 
-namespace YeuThietKeWeb.vi_vn
+namespace nidushealth.com.vi_vn
 {
     public partial class Ajax_customer : System.Web.UI.Page
     {

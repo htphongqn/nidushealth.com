@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YeuThietKeWeb.vi_vn {
+namespace nidushealth.com.vi_vn {
     
     
     public partial class Regis {
@@ -28,6 +28,6 @@ namespace YeuThietKeWeb.vi_vn {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Regis Regis1;
+        protected global::nidushealth.com.UIs.Regis Regis1;
     }
 }

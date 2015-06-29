@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using GiaNguyen.Components;
 using System.Drawing.Imaging;
 
-namespace YeuThietKeWeb.vi_vn
+namespace nidushealth.com.vi_vn
 {
     public partial class CImage : System.Web.UI.Page
     {

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace YeuThietKeWeb.Master {
+namespace nidushealth.com.Master {
     
     
     public partial class Index {
@@ -46,7 +46,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Support Support1;
+        protected global::nidushealth.com.UIs.Support Support1;
         
         /// <summary>
         /// Header1 control.
@@ -55,7 +55,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Header Header1;
+        protected global::nidushealth.com.UIs.Header Header1;
         
         /// <summary>
         /// MenuMobile1 control.
@@ -64,7 +64,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.MenuMobile MenuMobile1;
+        protected global::nidushealth.com.UIs.MenuMobile MenuMobile1;
         
         /// <summary>
         /// MenuTop1 control.
@@ -73,7 +73,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.MenuTop MenuTop1;
+        protected global::nidushealth.com.UIs.MenuTop MenuTop1;
         
         /// <summary>
         /// Slide1 control.
@@ -82,7 +82,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Slide Slide1;
+        protected global::nidushealth.com.UIs.Slide Slide1;
         
         /// <summary>
         /// HomeCate1 control.
@@ -91,7 +91,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.HomeCate HomeCate1;
+        protected global::nidushealth.com.UIs.HomeCate HomeCate1;
         
         /// <summary>
         /// Intro1 control.
@@ -100,7 +100,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Intro Intro1;
+        protected global::nidushealth.com.UIs.Intro Intro1;
         
         /// <summary>
         /// HomeQuestions1 control.
@@ -109,7 +109,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.HomeQuestions HomeQuestions1;
+        protected global::nidushealth.com.UIs.HomeQuestions HomeQuestions1;
         
         /// <summary>
         /// HomeAdvisory1 control.
@@ -118,7 +118,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.HomeAdvisory HomeAdvisory1;
+        protected global::nidushealth.com.UIs.HomeAdvisory HomeAdvisory1;
         
         /// <summary>
         /// NewsEvent1 control.
@@ -127,7 +127,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.NewsEvent NewsEvent1;
+        protected global::nidushealth.com.UIs.NewsEvent NewsEvent1;
         
         /// <summary>
         /// InfoContact1 control.
@@ -136,7 +136,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.InfoContact InfoContact1;
+        protected global::nidushealth.com.UIs.InfoContact InfoContact1;
         
         /// <summary>
         /// Facebook1 control.
@@ -145,7 +145,7 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Facebook Facebook1;
+        protected global::nidushealth.com.UIs.Facebook Facebook1;
         
         /// <summary>
         /// Static1 control.
@@ -154,6 +154,6 @@ namespace YeuThietKeWeb.Master {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::YeuThietKeWeb.UIs.Static Static1;
+        protected global::nidushealth.com.UIs.Static Static1;
     }
 }

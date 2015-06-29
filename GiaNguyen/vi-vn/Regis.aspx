@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Default.Master" AutoEventWireup="true" CodeBehind="Regis.aspx.cs" Inherits="YeuThietKeWeb.vi_vn.Regis" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Default.Master" AutoEventWireup="true" CodeBehind="Regis.aspx.cs" Inherits="nidushealth.com.vi_vn.Regis" %>
 <%@ Register src="../UIs/Regis.ascx" tagname="Regis" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:Literal ID="ltrFavicon" runat="server" EnableViewState="false"></asp:Literal>

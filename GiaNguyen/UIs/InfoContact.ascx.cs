@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using System.IO;
 using Controller;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class InfoContact : System.Web.UI.UserControl
     {

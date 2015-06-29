@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuTop.ascx.cs" Inherits="YeuThietKeWeb.UIs.MenuTop" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="MenuTop.ascx.cs" Inherits="nidushealth.com.UIs.MenuTop" %>
 
 
 <div id="cssmenu" class="container">

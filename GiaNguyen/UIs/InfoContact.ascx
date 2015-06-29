@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="InfoContact.ascx.cs" Inherits="YeuThietKeWeb.UIs.InfoContact" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="InfoContact.ascx.cs" Inherits="nidushealth.com.UIs.InfoContact" %>
 
 <div class="one-third column">
     <div class="col_menuFooter" id="contact_footer">

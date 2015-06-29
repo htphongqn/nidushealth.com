@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Intro.ascx.cs" Inherits="YeuThietKeWeb.UIs.Intro" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Intro.ascx.cs" Inherits="nidushealth.com.UIs.Intro" %>
 
 <div class="eight columns">
     <!--Intro-->

@@ -8,7 +8,7 @@ using vpro.functions;
 using Controller;
 using GiaNguyen.Components;
 
-namespace YeuThietKeWeb.UIs
+namespace nidushealth.com.UIs
 {
     public partial class Templates : System.Web.UI.UserControl
     {

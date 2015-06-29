@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Regis.ascx.cs" Inherits="YeuThietKeWeb.UIs.Regis" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Regis.ascx.cs" Inherits="nidushealth.com.UIs.Regis" %>
 
 <div class="inner_side">
     <div class="current_path">
