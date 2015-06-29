@@ -51,7 +51,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user"></span>Họ và tên
+                    <span class="user"></span>Fullname
                 </th>
                 <td>
                     <input type="text" name="txtFullName" id="txtFullName" runat="server" style="width: 300px;" />
@@ -59,17 +59,17 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Tên Logon
+                    <span class="user">*</span>Username
                 </th>
                 <td>
                     <input type="text" name="txtUN" id="txtUN" runat="server" style="width: 300px;" />
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Vui lòng nhập tên nhóm"
-                        Text="Vui lòng nhập tên nhóm" ControlToValidate="txtUN" CssClass="errormes"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Vui lòng nhập username"
+                        Text="Vui lòng nhập username" ControlToValidate="txtUN" CssClass="errormes"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Mật khẩu
+                    <span class="user">*</span>Password
                 </th>
                 <td>
                     <input type="password" name="txtPass" id="txtPass" runat="server" style="width: 300px;" autocomplete="off"/>
@@ -79,7 +79,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    <span class="user">*</span>Nhập lại mật khẩu
+                    <span class="user">*</span>RePassword
                 </th>
                 <td>
                     <input type="password" name="txtRePass" id="txtRePass" runat="server" style="width: 300px;" autocomplete="off" />
@@ -90,7 +90,7 @@
             </tr>
             <tr>
                 <th valign="top" class="left">
-                    Nhóm
+                    Group
                 </th>
                 <td>
                     <asp:DropDownList ID="ddlGroup" runat="server" DataValueField="GROUP_ID" DataTextField="GROUP_NAME"

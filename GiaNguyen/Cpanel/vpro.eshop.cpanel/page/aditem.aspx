@@ -156,7 +156,7 @@
             </tr>
             <tr style="display:none;">
                 <th valign="top" class="left">
-                    <span class="user">*</span>Chiều rộng
+                    <span class="user">*</span>Width
                 </th>
                 <td>
                     <input type="text" name="txtWidth" id="txtWidth" runat="server" onblur="this.value=formatNumeric(this.value);"
@@ -165,7 +165,7 @@
             </tr>
             <tr style="display:none;">
                 <th valign="top" class="left">
-                    <span class="user">*</span>Chiều cao
+                    <span class="user">*</span>Height
                 </th>
                 <td>
                     <input type="text" name="txtHeight" id="txtHeight" runat="server" onblur="this.value=formatNumeric(this.value);"
@@ -186,7 +186,7 @@
             </tr>
             <tr style="display:none;">
                 <th valign="top" class="left">
-                    <span class="user">*</span>Ngày bắt đầu
+                    <span class="user">*</span>From date
                 </th>
                 <td>
                     <uc1:pickerAndCalendar ID="ucFromDate" runat="server" />
@@ -194,7 +194,7 @@
             </tr>
             <tr style="display:none;">
                 <th valign="top" class="left">
-                    <span class="user">*</span>Ngày kết thúc
+                    <span class="user">*</span>To date
                 </th>
                 <td>
                     <uc1:pickerAndCalendar ID="ucToDate" runat="server" />
@@ -211,7 +211,7 @@
             </tr>
             <tr style="height: 20px;display:none;">
                 <th valign="top" class="left">
-                    Lượt Click
+                     Click Count
                 </th>
                 <td height="25">
                     <asp:Label ID="lblCount" runat="server" EnableViewState="false"></asp:Label>

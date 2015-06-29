@@ -362,7 +362,7 @@
                     </tr>
                     <tr>
                         <th valign="top" class="left">
-                            Views
+                            ViewCount
                         </th>
                         <td>
                             <input type="text" name="txtCount" id="txtCount" runat="server" onkeyup="this.value=formatNumeric(this.value);"

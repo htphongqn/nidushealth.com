@@ -468,7 +468,7 @@ namespace vpro.eshop.cpanel.page
                 strEmailBody += MailContent;
                 strEmailBody += "</body></html>";
 
-                SendEmailSMTP("Please visit the website yeuthietkeweb.com", Email, "", "", strEmailBody, true, false);
+                SendEmailSMTP("Please visit the website nidushealth.com", Email, "", "", strEmailBody, true, false);
 
             }
             catch (Exception ex)

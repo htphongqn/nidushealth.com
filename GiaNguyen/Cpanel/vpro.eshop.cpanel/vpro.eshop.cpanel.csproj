@@ -95,6 +95,7 @@
     <Content Include="Data\configs\header_baogia.htm" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\logo_t.png" />
     <Content Include="Images\add.png" />
     <Content Include="Images\Admin.png" />
     <Content Include="Images\Admin_adv.png" />
@@ -104,6 +105,7 @@
     <Content Include="Images\Admin_System.png" />
     <Content Include="Images\Admin_User_Group.png" />
     <Content Include="Images\Admin_weblinks.png" />
+    <Content Include="Images\app_product.png" />
     <Content Include="Images\Button_Admin\advertising.png" />
     <Content Include="Images\Button_Admin\Album_Hinh.png" />
     <Content Include="Images\Button_Admin\BannerQuangCao.png" />
@@ -140,6 +142,7 @@
     <Content Include="Images\ICON_ADD.png" />
     <Content Include="Images\ICON_ADD_ATTRIBUTES.jpg" />
     <Content Include="Images\ICON_ADD_NEW.png" />
+    <Content Include="Images\ICON_DELETE.png" />
     <Content Include="Images\ICON_DELETE_ALL.jpg" />
     <Content Include="Images\ICON_DETAILS.jpg" />
     <Content Include="Images\ICON_EDIT.jpg" />
@@ -169,6 +172,7 @@
     <Content Include="Images\panel_c.png" />
     <Content Include="Images\search.png" />
     <Content Include="Images\Sendmail.png" />
+    <Content Include="Images\send_mail.png" />
     <Content Include="Images\sprite.png" />
     <Content Include="Images\statistic.png" />
     <Content Include="Images\ui-icons_222222_256x240.png" />
