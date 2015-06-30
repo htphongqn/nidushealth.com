@@ -10,7 +10,7 @@
 
       <div class="col12">
 
-        <div class="box padd10">
+        <div class="box padd10" style="display:none">
           <div class="nameL" id="About Us"></div>
           <h2 class="headingBox"><span>About Us</span>
             <div class="subMenu">
@@ -31,177 +31,67 @@
         </div>
         <!--End Box-->
 
-        <div class="box padd10">
-          <div class="nameL" id="Consumers"></div>
-          <h2 class="headingBox" ><span>Consumers</span>
-            <div class="subMenu">
-              <div class="linkSC"><a>See a Doctor</a></div>
-              <div class="linkSC"><a>See a Therapist</a></div>
-              <div class="linkSC"><a>Get Started</a></div>
-              <div class="linkSC"><a>FAQs</a></div>
-              <div class="linkSC"><a>Our Providers</a></div>
-            </div>
-          </h2>
-          <div class="innerbox  ">
-            <div class="imgCate"><img src="data/img6.jpg" />
-              <div class="captionPhotoCate">
-                <h3>See a Doctor Now!</h3>
-                <div class="clearfix"></div>
-                <div class="desCaption"> By video or phone.<br />
-                  Exceptional Care, Anywhere.</div>
-                <div class="clearfix"></div>
-                <div class="listSubmenu fright">
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>See a Doctor</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>See a Therapist</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>FAQs</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>Our Providers</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>Health Services Center</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
+        <asp:Repeater ID="rptCatMain" runat="server">
+            <ItemTemplate>
+                <div class="box padd10">
+                  <div class="nameL" id="Consumers"></div>
+                    <h2 class="headingBox" ><span><%#Eval("cat_name")%></span>
+                      <div class="subMenu">
+                          <asp:Repeater ID="Repeater1" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
+                                <ItemTemplate>
+                                    <div class="linkSC"><a href="<%#GetLinkCat(Eval("cat_url"),Eval("cat_seo_url"),1)%>">
+                                        <%#Eval("cat_name")%>
+                                    </a></div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                    </h2>                  
+                    <div class="innerbox  ">
+                      <div class="imgCate">            
+                        <img src="<%# Getimages_Cat(Eval("Cat_ID"), Eval("Cat_IMAGE1")) %>" />
+                            <div class="captionPhotoCate">
+                            <div class="desCaption"><%#Eval("CAT_DESC")%></div>
+                            <div class="clearfix"></div>
+                            <div class="listSubmenu fright">
+                                <asp:Repeater ID="Repeater2" runat="server" DataSource='<%# Load_Menu2(Eval("Cat_ID")) %>'>
+                                    <ItemTemplate>
+                                    <div class="linkSM">
+                                        <div class="btn btnWhite"><a href="<%#GetLinkCat(Eval("cat_url"),Eval("cat_seo_url"),1)%>">
+                                            <%#Eval("cat_name")%>
+                                        </a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
+                                        </div>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="videoCate">
+                        <div class="listMediaIndex">
+                        <div class="innerListMedia">
+                            <asp:Repeater ID="rptnew" runat="server"  DataSource='<%# Load_news(Eval("Cat_ID")) %>'>
+                                <ItemTemplate>
+                                <div class="mediaItem">
+                                    <div class="media">
+                                        <div class="innerMedia">
+                                        <div class="dateTime"><%# getDate(Eval("NEWS_PUBLISHDATE")) %></div>
+                                        <div class="thumb"><a class="fancybox" rel="group" href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">
+                                            <img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>" alt="<%# Eval("NEWS_TITLE") %>" /></a></div>
+                                        <div class="text">
+                                            <h3><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><%# Eval("NEWS_TITLE") %></a></h3>
+                                            <p><%# Eval("NEWS_DESC") %></p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </div>
+                        </div>
+                      </div>
+                   </div>                    
                 </div>
-              </div>
-            </div>
-            <div class="videoCate">
-              <div class="listMediaIndex">
-                <div class="innerListMedia">
-                  <div class="mediaItem">
-                    <div class="media">
-                      <div class="innerMedia">
-                        <div class="dateTime">Apr 19, 2015</div>
-                        <div class="thumb"><a class="fancybox" rel="group" href="data/video1.jpg"><img src="data/video1.jpg" /></a></div>
-                        <div class="text">
-                          <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--End media-->
-                  <div class="mediaItem">
-                    <div class="media">
-                      <div class="innerMedia">
-                        <div class="dateTime">Apr 19, 2015</div>
-                        <div class="thumb"><a class="fancybox" rel="group" href="data/video2.jpg"><img src="data/video2.jpg" /></a></div>
-                        <div class="text">
-                          <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--End media-->
-                  <div class="mediaItem">
-                    <div class="media">
-                      <div class="innerMedia">
-                        <div class="dateTime">Apr 19, 2015</div>
-                        <div class="thumb"><a class="fancybox" rel="group" href="data/video1.jpg"><img src="data/video1.jpg" /></a></div>
-                        <div class="text">
-                          <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End Box-->
-
-        <div class="box padd10">
-          <div class="nameL" id="Telehealth Solutions"></div>
-          <h2 class="headingBox" ><span>Telehealth Solutions</span>
-            <div class="subMenu">
-              <div class="linkSC"><a>Employers</a></div>
-              <div class="linkSC"><a>Health Plans</a></div>
-              <div class="linkSC"><a>Providers</a></div>
-              <div class="linkSC"><a>Health Systems</a></div>
-              <div class="linkSC"><a>Health Services Center</a></div>
-              <div class="linkSC"><a>Contact Us</a></div>
-            </div>
-          </h2>
-          <div class="innerbox  ">
-            <div class="imgCate"><img src="data/img5.jpg" />
-              <div class="captionPhotoCate">
-                <h3>Transforming the World of Healthycare</h3>
-                <div class="clearfix"></div>
-                <div class="desCaption"> Online and on-demand health care delivery services and cloud-based software platform. </div>
-                <div class="clearfix"></div>
-                <div class="listSubmenu">
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>Employers</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>Health Plans</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>Providers</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>Health Systems</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                  <div class="linkSM">
-                    <div class="btn btnWhite"><a>Health Services Center</a><i class="glyphicon  glyphicon-chevron-right"></i> </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="videoCate">
-              <div class="listMediaIndex">
-                <div class="innerListMedia">
-                  <div class="mediaItem">
-                    <div class="media">
-                      <div class="innerMedia">
-                        <div class="dateTime">Apr 19, 2015</div>
-                        <div class="thumb"><a class="fancybox" rel="group" href="data/video1.jpg"><img src="data/video1.jpg" /></a></div>
-                        <div class="text">
-                          <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--End media-->
-                  <div class="mediaItem">
-                    <div class="media">
-                      <div class="innerMedia">
-                        <div class="dateTime">Apr 19, 2015</div>
-                        <div class="thumb"><a class="fancybox" rel="group" href="data/video2.jpg"><img src="data/video2.jpg" /></a></div>
-                        <div class="text">
-                          <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!--End media-->
-                  <div class="mediaItem">
-                    <div class="media">
-                      <div class="innerMedia">
-                        <div class="dateTime">Apr 19, 2015</div>
-                        <div class="thumb"><a class="fancybox" rel="group" href="data/video1.jpg"><img src="data/video1.jpg" /></a></div>
-                        <div class="text">
-                          <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                          <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!--End Box-->
+            </ItemTemplate>
+        </asp:Repeater>
 
         <div class="box padd10">
           <div class="nameL" id="Last News"></div>
@@ -214,115 +104,31 @@
           <div class="innerbox ">
             <div class="listMediaIndex">
               <div class="innerListMedia">
-                <div class="mediaItem">
-                  <div class="media">
-                    <div class="innerMedia">
-                      <div class="dateTime">Apr 19, 2015</div>
-                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
-                      <div class="text">
-                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                      </div>
-                      <div class="viewMoreNews">
-                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a href="news.html">Read more </a> </div>
-                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End media-->
-                <div class="mediaItem">
-                  <div class="media">
-                    <div class="innerMedia">
-                      <div class="dateTime">Apr 19, 2015</div>
-                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
-                      <div class="text">
-                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                      </div>
-                      <div class="viewMoreNews">
-                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a href="news.html">Read more </a> </div>
-                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End media-->
-                <div class="mediaItem">
-                  <div class="media">
-                    <div class="innerMedia">
-                      <div class="dateTime">Apr 19, 2015</div>
-                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
-                      <div class="text">
-                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                      </div>
-                      <div class="viewMoreNews">
-                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a href="news.html">Read more </a> </div>
-                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End media-->
-                <div class="mediaItem">
-                  <div class="media">
-                    <div class="innerMedia">
-                      <div class="dateTime">Apr 19, 2015</div>
-                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
-                      <div class="text">
-                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                      </div>
-                      <div class="viewMoreNews">
-                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a href="news.html">Read more </a> </div>
-                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End media-->
-                <div class="mediaItem">
-                  <div class="media">
-                    <div class="innerMedia">
-                      <div class="dateTime">Apr 19, 2015</div>
-                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
-                      <div class="text">
-                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                      </div>
-                      <div class="viewMoreNews">
-                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a href="news.html">Read more </a> </div>
-                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End media-->
-                <div class="mediaItem">
-                  <div class="media">
-                    <div class="innerMedia">
-                      <div class="dateTime">Apr 19, 2015</div>
-                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
-                      <div class="text">
-                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
-                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
-                      </div>
-                      <div class="viewMoreNews">
-                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a href="news.html">Read more </a> </div>
-                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!--End media--> 
-                
+                <asp:Repeater ID="rptLastnew" runat="server">
+                    <ItemTemplate>
+                        <div class="mediaItem">
+                          <div class="media">
+                            <div class="innerMedia">
+                              <div class="dateTime"><%# getDate(Eval("NEWS_PUBLISHDATE")) %></div>
+                              <div class="thumb"><a><img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>" alt="<%# Eval("NEWS_TITLE") %>" /></a></div>
+                              <div class="text">
+                                <h3><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><%# Eval("NEWS_TITLE") %></a></h3>
+                                <p><%# Eval("NEWS_DESC") %></p>
+                              </div>
+                              <div class="viewMoreNews">
+                                <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">Read more </a> </div>
+                                <div class="fright linkViewMore"><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">View detail &raquo;</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </ItemTemplate>
+                </asp:Repeater>
               </div>
             </div>
           </div>
         </div>
         <!--End Box--> 
-        
       </div>
       <div class="footer wmn"> </div>
     </div>
