@@ -27,5 +27,5 @@
         </ul>
     </div>
     </div>
-    <div class="col1 cLogin"> <a href="admin.nidushealth.com"><i class="glyphicon glyphicon-lock"></i>Sign in</a> </div>
+    <div class="col1 cLogin"> <a href="http://admin.nidushealth.com"><i class="glyphicon glyphicon-lock"></i>Sign in</a> </div>
 </div>
