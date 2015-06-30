@@ -73,7 +73,7 @@
                                 <div class="mediaItem">
                                     <div class="media">
                                         <div class="innerMedia">
-                                        <div class="dateTime"><%# getDate(Eval("NEWS_PUBLISHDATE")) %></div>
+                                        <div class="dateTime"><%# getdate(Eval("NEWS_PUBLISHDATE"))%></div>
                                         <div class="thumb"><a class="fancybox" rel="group" href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>">
                                             <img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>" alt="<%# Eval("NEWS_TITLE") %>" /></a></div>
                                         <div class="text">
@@ -109,7 +109,7 @@
                         <div class="mediaItem">
                           <div class="media">
                             <div class="innerMedia">
-                              <div class="dateTime"><%# getDate(Eval("NEWS_PUBLISHDATE")) %></div>
+                              <div class="dateTime"><%# getdate(Eval("NEWS_PUBLISHDATE"))%></div>
                               <div class="thumb"><a><img src="<%# GetImageT(Eval("NEWS_ID"),Eval("NEWS_IMAGE3")) %>" alt="<%# Eval("NEWS_TITLE") %>" /></a></div>
                               <div class="text">
                                 <h3><a href="<%# GetLink(Eval("NEWS_URL"),Eval("NEWS_SEO_URL"),Eval("CAT_SEO_URL")) %>"><%# Eval("NEWS_TITLE") %></a></h3>
