@@ -10,7 +10,7 @@
 namespace nidushealth.com.UIs {
     
     
-    public partial class MenuTop {
+    public partial class CategoriesRight {
         
         /// <summary>
         /// Rpmenu control.

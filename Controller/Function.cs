@@ -24,7 +24,7 @@ namespace Controller
         }
         public string getDate(object News_PublishDate)
         {
-            return string.Format("{0:dd/MM/yyyy}", News_PublishDate);
+            return string.Format("{0:MM/dd/yyyy}", News_PublishDate);
         }
         public string GetImageT_News(object News_Id, object News_Image1)
         {
@@ -145,7 +145,7 @@ namespace Controller
         //Get images logo - sologan
         public string Getlogo(object Banner_type, object banner_field, object Banner_ID, object Banner_Image)
         {
-            return "<a href='/' class='change'>" + GetImage(Banner_type, Banner_ID, Banner_Image) + "</a>";
+            return "<a href='/'>" + GetImage(Banner_type, Banner_ID, Banner_Image) + "</a>";
         }
         public string Getbanner(object Banner_type, object banner_field, object Banner_ID, object Banner_Image)
         {
@@ -159,7 +159,7 @@ namespace Controller
                 if (Utils.CIntDef(Banner_type) == 0)
                 {
                     if (Utils.CIntDef(Banner_ID) > 0 && !string.IsNullOrEmpty(Utils.CStrDef(Banner_Image)))
-                        return "<img src='" + PathFiles.GetPathBanner(Utils.CIntDef(Banner_ID)) + Utils.CStrDef(Banner_Image) + "' alt='' class='img-responsive'/>";
+                        return "<img src='" + PathFiles.GetPathBanner(Utils.CIntDef(Banner_ID)) + Utils.CStrDef(Banner_Image) + "' alt=''/>";
                     else
                         return "<img src='/vi-vn/Images/Logo.png'/>"; ;
                 }

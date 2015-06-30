@@ -9,7 +9,7 @@ using Controller;
 
 namespace nidushealth.com.UIs
 {
-    public partial class MenuTop : System.Web.UI.UserControl
+    public partial class CategoriesRight : System.Web.UI.UserControl
     {
         #region Declare
         Propertity per = new Propertity();
@@ -29,7 +29,7 @@ namespace nidushealth.com.UIs
         {
             try
             {
-                Rpmenu.DataSource = per.Loadmenu(0, 10, 1);
+                Rpmenu.DataSource = per.Loadmenu(1, 10, 1);
                 Rpmenu.DataBind();
             }
             catch (Exception ex)

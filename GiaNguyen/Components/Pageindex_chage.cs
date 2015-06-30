@@ -49,7 +49,7 @@ namespace GiaNguyen.Components
                 {
                     if (_page == i)
                     {
-                        _re += "<b>" + i + "</b>";
+                        _re += "<li class='active'>" + i + "</li>";
                     }
                     else
                     {
@@ -70,14 +70,14 @@ namespace GiaNguyen.Components
                         {
                             if (i == _sotrang && _page >= 7)
                             {
-                                _re += "<a href='/" + cat_seo_url + ".html?page=" + (_page + 1) + "'> >> </a>";
+                                _re += "<li><a href='/" + cat_seo_url + ".html?page=" + (_page + 1) + "'> >> </a></li>";
                             }
                             else if (i == s && _page >= 7)
                             {
-                                _re += "<a href='/" + cat_seo_url + ".html?page=" + (_page - 1) + "'> << </a>";
+                                _re += "<li><a href='/" + cat_seo_url + ".html?page=" + (_page - 1) + "'> << </a></li>";
                             }
                             else
-                                _re += "<a href='/" + cat_seo_url + ".html?page=" + i + "'>" + i + "</a>";
+                                _re += "<li><a href='/" + cat_seo_url + ".html?page=" + i + "'>" + i + "</a></li>";
                         }
 
                     }
