@@ -15,79 +15,354 @@
 <head id="Head1" runat="server">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/vi-vn/Styles/template.css" type="text/css" />
-    <link rel="stylesheet" href="/vi-vn/Styles/skeleton.css" type="text/css" />
-    <script type="text/javascript" src="/vi-vn/Scripts/jquery-1.8.3.min.js"></script>
-    <!---Hoz menu-->
-    <link href="/vi-vn/Styles/nav_menu.css" rel="stylesheet" type="text/css" />
-    <!--Nivo Slider Responsive-->
-    <link rel="stylesheet" href="/vi-vn/Styles/nivo-slider.css" type="text/css" media="screen" />
-    <!--Logo-->
-    <link href="/vi-vn/Styles/lib.css" rel="stylesheet" type="text/css" />
-    <!--Owl Carousel-->
-    <link href="/vi-vn/Styles/owl.carousel.css" rel="stylesheet">
-    <link href="/vi-vn/Styles/owl.theme.css" rel="stylesheet">
-    <link rel="stylesheet" href="/vi-vn/Styles/layout.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/css.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/glyphicon.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/navx.css">
+    <link rel="stylesheet" type="text/css" href="styles/detailNews.css">
+    <script type="text/javascript" src="scripts/jquery.min.1.11.2.js"></script>
+    <link rel="stylesheet" href="Styles/nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="styles/navx-news.css">
+    <link rel="stylesheet" type="text/css" href="styles/bxslider.css">
+    <script type="text/javascript" src="scripts/bxslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/fancybox.css">
 </head>
 <body>
     <form id="form1" runat="server">
-    <!--Support-->
-    <uc1:Support ID="Support1" runat="server" />
-    <!--End Support-->
-    <!--Header-->
-    <uc2:Header ID="Header1" runat="server" />
-    <!--End Header-->
-    <!--Top Menu-->
-    <div id="nav_wrap" class="cf">
-        <!--MenuMobile-->
-        <uc3:MenuMobile ID="MenuMobile1" runat="server" />
-        <!--End MenuMobile-->
-        <!--MenuTop-->
-        <uc4:MenuTop ID="MenuTop1" runat="server" />
-        <!--End MenuTop-->
-    </div>
-    <!--end Top Menu-->
-    <section id="main" class="container">
-      <!--Row Home-->
-      <div class="row_home">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <script type='text/javascript'>//<![CDATA[
+            $(function () {
+                var sticky_navigation_offset_top = $('.wMenuTop').offset().top;
+                var sticky_navigation = function () {
+                    var scroll_top = $(window).scrollTop();
+                    if (scroll_top > sticky_navigation_offset_top) {
+                        $('.wMenuTop').css({ 'position': 'fixed', 'top': 0 });
+                    } else {
+                        $('.wMenuTop').css({ 'position': 'relative', 'top': 0 });
+                    }
+                };
+
+                sticky_navigation();
+
+                $(window).scroll(function () {
+                    sticky_navigation();
+                });
+            }); // JavaScript Document
+</script>
+<div class=" wrap wMenuTop">
+  <div class="container ">
+    <div class="rowmn rHeader">
+      <div class=" col3 cLogo">
+        <div class="clsLogo"><a href="index.html"><img src="data/logo.png" /></a></div>
       </div>
-      <!--end Row Home-->
-      <!--Row Home-->
-      <div class="row_home row_footer">
-        <!--NewsEvent-->
-        <uc10:NewsEvent ID="NewsEvent1" runat="server" />
-        <!--End NewsEvent-->
-        <!--InfoContact-->
-        <uc11:InfoContact ID="InfoContact1" runat="server" />
-        <!--End InfoContact-->
-        <!--Facebook-->
-        <uc12:Facebook ID="Facebook1" runat="server" />
-        <!--End Facebook-->
-      </div>
-      <!--end Row Home-->
-      <!-- Begin of footer-->
-      <footer>
-        <!--Copyright-->
-        <div class="five columns">Copyright © 2015 By nidushealth.com.com </div>
-        <!--end Copyright-->
-        <!--Static-->
-        <uc13:Static ID="Static1" runat="server" />
-        <!--End Static-->
-      </footer>
-      <!-- End of footer-->
-    </section>
-    <!-- back to top -->
-    <script type="text/javascript" src="/vi-vn/Scripts/scrolltopcontrol.js"></script>
-    <div id="toTop">
+      <div class="col4 fright hotline text-right"> 24/7 HELPLINE<b> 800-1234-567</b> </div>
     </div>
-    <script type="text/javascript" src="/vi-vn/Scripts/jquery.nivo.slider.pack.js"></script>
-    <!-- Owl Carousel Assets -->
-    <script src="/vi-vn/Scripts/owl.carousel.js"></script>
-    <script type="text/javascript" src="/vi-vn/Scripts/all_scripts.js"></script>
+    <div class="rowmn cMenu"> 
+      <!---->
+      <div class="col9 cNavx">
+        <div class="navx">
+          <ul>
+            <li class="active"><a href="index.html">Home</a> </li>
+            <li class=""><a href="#Consumers">Consumers</a> </li>
+            <li class=""><a href="#Telehealth Solutions">Telehealth Solutions</a> </li>
+            <li class=""><a href="#Last News">Last News</a> </li>
+            <li class=""><a href="#About Us">About Us</a> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col1 cLogin"> <a href="signin.html"><i class="glyphicon glyphicon-lock"></i>Sign in</a> </div>
+    </div>
+  </div>
+</div>
+<div class="wrap wMain">
+  <div class="container">
+    <div class="rowmn shadow bgWhite">
+      <div class="col12 cSlideImgProAds"> 
+        <script type="text/javascript">
+			$(document).ready(function(){
+			  $('.slider1').bxSlider({
+				mode: 'horizontal',
+				slideWidth: 200,
+				minSlides: 7,
+				moveSlides: 1,
+				maxSlides: 7,
+				slideMargin: 5,
+				auto: true,
+				speed: 5000,
+				controls: false,
+				pause: 0,
+			  });
+			});
+			</script>
+        <div class="slider1">
+          <div class="slide">
+            <div class="ads"><a href="#"><img src="data/1.png" /></a></div>
+          </div>
+          <div class="slide">
+            <div class="ads"><a href="#"><img src="data/2.png" /></a></div>
+          </div>
+          <div class="slide">
+            <div class="ads"><a href="#"><img src="data/3.png" /></a></div>
+          </div>
+          <div class="slide">
+            <div class="ads"><a href="#"><img src="data/4.png" /></a></div>
+          </div>
+          <div class="slide">
+            <div class="ads"><a href="#"><img src="data/5.png" /></a></div>
+          </div>
+          <div class="slide">
+            <div class="ads"><a href="#"><img src="data/6.png" /></a></div>
+          </div>
+          <div class="slide">
+            <div class="ads"><a href="#"><img src="data/7.png" /></a></div>
+          </div>
+          <div class="slide">
+            <div class="ads"><img src="data/8.png" /></div>
+          </div>
+        </div>
+      </div>
+      <div class="breadcrumbBox">
+        <ul class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">News</a></li>
+          <li class="active"> Media Coverage Archive</li>
+        </ul>
+      </div>
+      <div class="col9 cMainContent">
+        <div class="box">
+          <div class="headingBox headingBoxMain"><span>Media Coverage Archive</span></div>
+          <div class="innerbox ">
+            <div class="listMediaIndex blistnews">
+              <div class="innerListMedia">
+                <div class="mediaItem">
+                  <div class="media">
+                    <div class="innerMedia">
+                      <div class="dateTime">Apr 19, 2015</div>
+                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
+                      <div class="text">
+                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                      </div>
+                      <div class="viewMoreNews">
+                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a>News </a> </div>
+                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End media-->
+                <div class="mediaItem">
+                  <div class="media">
+                    <div class="innerMedia">
+                      <div class="dateTime">Apr 19, 2015</div>
+                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
+                      <div class="text">
+                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                      </div>
+                      <div class="viewMoreNews">
+                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a>News </a> </div>
+                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End media-->
+                <div class="mediaItem">
+                  <div class="media">
+                    <div class="innerMedia">
+                      <div class="dateTime">Apr 19, 2015</div>
+                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
+                      <div class="text">
+                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                      </div>
+                      <div class="viewMoreNews">
+                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a>News </a> </div>
+                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End media-->
+                <div class="mediaItem">
+                  <div class="media">
+                    <div class="innerMedia">
+                      <div class="dateTime">Apr 19, 2015</div>
+                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
+                      <div class="text">
+                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                      </div>
+                      <div class="viewMoreNews">
+                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a>News </a> </div>
+                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End media-->
+                <div class="mediaItem">
+                  <div class="media">
+                    <div class="innerMedia">
+                      <div class="dateTime">Apr 19, 2015</div>
+                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
+                      <div class="text">
+                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                      </div>
+                      <div class="viewMoreNews">
+                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a>News </a> </div>
+                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End media-->
+                <div class="mediaItem">
+                  <div class="media">
+                    <div class="innerMedia">
+                      <div class="dateTime">Apr 19, 2015</div>
+                      <div class="thumb"><a><img src="data/h3.jpg" /></a></div>
+                      <div class="text">
+                        <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                        <p>Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                      </div>
+                      <div class="viewMoreNews">
+                        <div class="fleft linePostL"><i class="glyphicon glyphicon-comment white"></i><a>News </a> </div>
+                        <div class="fright linkViewMore"><a>View detail &raquo;</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--End media--> 
+                
+              </div>
+              <div class="clearfix text-center">
+                <ul class="pagination">
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End Box-->
+      <div class="col3 cateNews">
+        <div class="box">
+          <h2 class="block-title"><span>Categories</span></h2>
+          <div class="contentCateNews">
+            <div class="cateList">
+              <ul class="category-links ">
+                <li><a href="/blog/health-wellness">Media Coverage Archive</a></li>
+                <li><a href="/blog/healing-treatments">Press Release Archive</a></li>
+                <li><a href="/blog/clinical-news">Clinical News</a></li>
+                <li><a href="/blog/spiritual-patient-experience">Spiritual &amp; Patient Experience</a></li>
+                <li><a href="/blog/community-relations">Community Relations</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="box cOtherNews">
+          <h2 class="block-title"><span>Latest News</span></h2>
+          <div class="listMediaIndex category-links">
+            <div class="innerListMedia">
+              <div class="mediaItem">
+                <div class="media">
+                  <div class="innerMedia">
+                    <div class="dateTime">Apr 19, 2015</div>
+                    <div class="text">
+                      <h3><a href="detailnews.html">Nulla vel metus scele risques</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End media-->
+              <div class="mediaItem">
+                <div class="media">
+                  <div class="innerMedia">
+                    <div class="dateTime">Apr 19, 2015</div>
+                    <div class="text">
+                      <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End media-->
+              <div class="mediaItem">
+                <div class="media">
+                  <div class="innerMedia">
+                    <div class="dateTime">Apr 19, 2015</div>
+                    <div class="text">
+                      <h3><a href="detailnews.html">Nulla vel metus scele risques</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End media--> 
+              
+              <!--End media-->
+              <div class="mediaItem">
+                <div class="media">
+                  <div class="innerMedia">
+                    <div class="dateTime">Apr 19, 2015</div>
+                    <div class="text">
+                      <h3><a href="detailnews.html">Nulla vel metus scelerisques</a></h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End media--> 
+              
+            </div>
+          </div>
+        </div>
+        <!--<div class="box">
+          <h2 class="block-title"><span>Archive</span></h2>
+          <div class="contentCateNews">
+            <div class="cateList">
+              <ul class="category-links ">
+                <li><a href="/blog/2015/05">May 2015</a></li>
+                <li><a href="/blog/2015/04">April 2015</a></li>
+                <li><a href="/blog/2015/03">March 2015</a></li>
+                <li><a href="/blog/2015/02">February 2015</a></li>
+                <li><a href="/blog/2015/01">January 2015</a></li>
+                <li><a href="/blog/2014/12">December 2014</a></li>
+                <li><a href="/blog/2014/11">November 2014</a></li>
+                <li><a href="/blog/2014/10">October 2014</a></li>
+                <li><a href="/blog/2014/09">September 2014</a></li>
+                <li><a href="/blog/2014/08">August 2014</a></li>
+                <li><a href="/blog/2014/07">July 2014</a></li>
+                <li><a href="/blog/2014/06">June 2014</a></li>
+                <li><a href="/blog/2014/05">May 2014</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>--> 
+      </div>
+    </div>
+    <div class="footer wmn"> </div>
+  </div>
+</div>
+</div>
+
+<!--End Container-->
+
+</div>
+<script type="text/javascript" src="scripts/js.js"></script> 
+ <script type="text/javascript" src="scripts/fancybox.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.fancybox').fancybox();
+    }); 
+</script> 
+<script type="text/javascript" src="Scripts/scrolltopcontrol.js"></script>
     </form>
 </body>
 </html>

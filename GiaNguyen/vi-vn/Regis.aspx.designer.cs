@@ -20,14 +20,6 @@ namespace nidushealth.com.vi_vn {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal ltrFavicon;
-        
-        /// <summary>
-        /// Regis1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.Regis Regis1;
+       
     }
 }

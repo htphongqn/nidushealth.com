@@ -1,0 +1,205 @@
+﻿/*Nav Desktop*/
+.radiusTT() {
+ -moz-border-radius-bottomright: 9px;
+ -webkit-border-bottom-right-radius: 9px;
+ border-bottom-right-radius: 9px;
+ -moz-border-radius-bottomleft: 9px;
+ -webkit-border-bottom-left-radius: 9px;
+ border-bottom-left-radius: 9px;
+}
+.navx a {
+	text-decoration: none;
+	color: #fff;
+	white-space: nowrap;
+}
+.navx ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.navx >ul {
+	width: 100%;
+	float: left
+}
+.navx {
+	width: 100%;
+	float: left;
+}
+.wNavx {
+}
+.menuBox {
+}
+.navx ul ul {
+	display: none !important;
+	position: absolute;
+	-moz-border-radius-bottomright: 9px;
+	-webkit-border-bottom-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+	-moz-border-radius-bottomleft: 9px;
+	-webkit-border-bottom-left-radius: 9px;
+	border-bottom-left-radius: 9px;
+	background: #B5861C;
+	padding-bottom: 10px;
+}
+.navx ul ul a {
+	line-height: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+	color: #000;
+}
+.navx ul ul ul {
+	left: 100%;
+	top: 0px;
+	-moz-border-radius-topright: 9px;
+	-webkit-border-top-right-radius: 9px;
+	border-top-right-radius: 9px;
+}
+.navx ul ul li {
+	position: relative;
+	min-width: 150px;
+	border-top: solid 0px #A57C1C;
+	border-bottom: solid 1px #B9891F;
+}
+.navx ul ul ul li:first-child {
+	-webkit-border-radius: 0 9px 0 0;
+	border-radius: 0 9px 0 0;
+}
+.navx ul ul li:hover {
+	background-color: #FFC620;
+}
+.navx ul ul li:hover> a {
+	color: #000
+}
+.navx ul li:hover>ul {
+	display: block;
+}
+.navx {
+	clear: both;
+	display: block;
+	z-index: 99;
+	position: relative
+}
+.navx>ul {
+	clear: both;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.navx>ul>li {
+	float: left;
+	position: relative;
+	border-left: solid 0px #ddd;
+}
+.navx>ul>li:first-child {
+	background-image: none;
+}
+.navx>ul>li:hover, .navx>ul>li:focus {
+	background-color: #fff
+}
+.navx>ul>li>a {
+	padding-left: 19px;
+	padding-right: 19px;
+	line-height: 45px;
+	text-transform: capitalize;
+	font-weight: normal;
+	color: #fff;
+	font-size: 14px;
+}
+.cLogin {
+	line-height: 45px;
+	float: right
+}
+.cLogin i {
+	margin-right: 5px;
+}
+.cLogin a {
+	color: #fff;
+	cursor: pointer
+}
+.navx>ul>li:hover, .navx>ul>li.active, .navx>ul>li:focus {
+	background: #fff
+}
+.navx>ul>li:hover >a, .navx>ul>li.active > a {
+	color: #1B62A9
+}
+.navx > ul > li > ul {
+	top: 100%;
+	left: 0;
+}
+/*End Nav Desktop*/
+.clearfix:after {
+	clear: both;
+}
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+.nav_f {
+	list-style: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+.nav_f a {
+	padding: 0 10px;
+	white-space: nowrap;
+	color: #39F;
+}
+.nav_f a:first-child {
+	padding-left: 0
+}
+.nav_f a+a:before {
+	content: "|";
+	margin-right: 10px;
+	color: #666;
+	text-decoration: none
+}
+.bSearch {
+	float: right;
+	position: relative
+}
+.bVistor {
+	margin-top: 15px;
+}
+.subMenu {
+	float: left;
+	width: 100%;
+	font-size: 1em;
+	margin-bottom: 20px;
+}
+.subMenu .linkSC {
+	display: inline-block;
+}
+.subMenu a {
+	color: #666;
+	text-decoration: none
+}
+.subMenu .linkSC+.linkSC:before {
+	content: "|";
+	margin: 0 10px;
+	color: #666;
+}
+.headingBox .subMenu {
+	float: left;
+	margin: 0;
+	margin-left: 20px;
+	width: auto;
+	display: inline-block;
+	line-height: 43px
+}
+.headingBox .subMenu a {
+	font-size: 13px;
+	color: #fff;
+	text-transform: none
+}
+.headingBox .subMenu a:hover {
+	color: #C4EA6F;
+	cursor: pointer
+}
+.headingBox .subMenu .linkSC+.linkSC:before {
+	content: "/";
+	margin: 0 10px;
+	color: #fff !important;
+	font-weight: normal
+}

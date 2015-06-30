@@ -40,42 +40,6 @@ namespace nidushealth.com.Master {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Support1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.Support Support1;
-        
-        /// <summary>
-        /// Header1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.Header Header1;
-        
-        /// <summary>
-        /// MenuMobile1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.MenuMobile MenuMobile1;
-        
-        /// <summary>
-        /// MenuTop1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.MenuTop MenuTop1;
-        
-        /// <summary>
         /// ContentPlaceHolder1 control.
         /// </summary>
         /// <remarks>
@@ -83,41 +47,5 @@ namespace nidushealth.com.Master {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
-        
-        /// <summary>
-        /// NewsEvent1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.NewsEvent NewsEvent1;
-        
-        /// <summary>
-        /// InfoContact1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.InfoContact InfoContact1;
-        
-        /// <summary>
-        /// Facebook1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.Facebook Facebook1;
-        
-        /// <summary>
-        /// Static1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.Static Static1;
     }
 }

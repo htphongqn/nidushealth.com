@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+.navx_news a {
+	text-decoration: none;
+	color: #fff;
+	white-space: nowrap;
+}
+.navx_news ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+.navx_news >ul {
+	width: 100%;
+	float: left
+}
+.navx_news {
+	width: 100%;
+	float: left;
+}
+.wnavx_news {
+}
+.navx_news ul ul {
+	display: none;
+	position: absolute;
+	background: #006579;
+	padding-bottom: 0px;
+}
+.navx_news ul ul a {
+	line-height: 30px;
+	padding-right: 10px;
+	padding-left: 10px;
+	color: #000;
+	font-size: 0.9em;
+}
+.navx_news ul ul ul {
+	left: 100%;
+	top: 0px;
+}
+.navx_news ul ul li {
+	position: relative;
+	min-width: 190px;
+	border-bottom: solid 1px #06819A;
+}
+.navx_news ul ul ul {
+	background: #014A59
+}
+.navx_news ul ul ul li {
+	border-bottom: solid 1px #014A59;
+}
+.navx_news ul ul> li:last-child {
+	border: 0
+}
+.navx_news ul ul li a {
+	color: #CBE2E8
+}
+.navx_news ul ul li:hover {
+	background-color: #014A59;
+}
+.navx_news ul li:hover>ul {
+	display: block;
+}
+.navx_news {
+	clear: both;
+	display: block;
+	z-index: 99;
+	position: relative
+}
+.navx_news>ul {
+	clear: both;
+	display: block;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.navx_news>ul>li {
+	float: left;
+	position: relative;
+	border-left: solid 1px #019CBC;
+	border-right: #0AB7D9 solid 1px;
+}
+.navx_news>ul>li:first-child {
+	background-image: none;
+}
+.navx_news>ul>li>a {
+	padding-left: 10px;
+	padding-right: 10px;
+	line-height: 40px;
+	text-transform: capitalize;
+	font-weight: normal;
+	color: #fff;
+}
+.navx_news>ul>li:hover, .navx_news>ul>li.active, .navx_news>ul>li:focus {
+	background: url(../images/bgNavx_news.png);
+	background-size: auto 100%;
+	background: #006579
+}
+.navx_news>ul>li:hover >a, .navx_news>ul>li.active > a {
+	color: #fff
+}
+.navx_news > ul > li > ul {
+	top: 100%;
+	left: 0;
+}
+.cMenu_news {
+	background-color: #0092AF;
+	border-bottom: solid 1px #0AABCB
+}
+
+
+
+.cSlideImgProAds{ margin-top:5px; border-top:solid 2px #136DB9;border-bottom:solid 2px #136DB9}
+.cMainContent .box{ margin-top:0}

@@ -120,3 +120,9 @@ E:\WWW_US\nidushealth.com\Model\bin\Debug\Model.pdb
 E:\WWW_US\nidushealth.com\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 E:\WWW_US\nidushealth.com\Model\obj\Debug\Model.dll
 E:\WWW_US\nidushealth.com\Model\obj\Debug\Model.pdb
+H:\SoftWeb\nidushealth.com\Model\bin\Debug\Model.dll.config
+H:\SoftWeb\nidushealth.com\Model\bin\Debug\Model.dll
+H:\SoftWeb\nidushealth.com\Model\bin\Debug\Model.pdb
+H:\SoftWeb\nidushealth.com\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+H:\SoftWeb\nidushealth.com\Model\obj\Debug\Model.dll
+H:\SoftWeb\nidushealth.com\Model\obj\Debug\Model.pdb
