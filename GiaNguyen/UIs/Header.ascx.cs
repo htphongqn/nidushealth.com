@@ -19,6 +19,7 @@ namespace nidushealth.com.UIs
             {
                 load_logo();
                 Loadhotline();
+
             }
         }
 
