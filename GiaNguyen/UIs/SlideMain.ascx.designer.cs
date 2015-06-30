@@ -7,27 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace nidushealth.com {
+namespace nidushealth.com.UIs {
     
     
-    public partial class deufult {
+    public partial class SlideMain {
         
         /// <summary>
-        /// ltrFavicon control.
+        /// Rpslider control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal ltrFavicon;
-        
-        /// <summary>
-        /// SlideMain1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::nidushealth.com.UIs.SlideMain SlideMain1;
+        protected global::System.Web.UI.WebControls.Repeater Rpslider;
     }
 }

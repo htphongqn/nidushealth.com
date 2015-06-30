@@ -1,31 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master/Default.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="nidushealth.com.deufult" %>
+<%@ Register src="~/UIs/SlideMain.ascx" tagname="SlideMain" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <asp:Literal ID="ltrFavicon" runat="server" EnableViewState="false"></asp:Literal>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="contentmain" runat="server">
 <div class="container">
     <div class="rowmn shadow bgWhite">
-      <div class="wmn">
-        <link rel="stylesheet" href="Styles/nivo-slider.css" type="text/css" media="screen" />
-        <script type="text/javascript" src="scripts/jquery.nivo.slider.js"></script> 
-        <script>
-            //slider nivo
-            $(window).load(function () {
-                $('#slider').nivoSlider();
-            });
-    </script>
-        <div class="slider_main">
-          <div class="slider-wrapper theme-default">
-            <div id="slider" class="nivoSlider">
-              <div class="itemSlide"> <a href=""> <img src="data/img1.jpg" title="Our quality doctors put compassion first. They know you by heart."/></a> </div>
-              <div class="itemSlide"> <a href=""><img src="data/img2.jpg" title="We focus on wellness and prevention to keep you and your family healthy."/></a> </div>
-              <div class="itemSlide"> <a href=""><img src="data/img3.jpg" title="We offers the programs and services you need to stay healthy"/></a> </div>
-              <div class="itemSlide"> <a href=""><img src="data/img4.jpg" title="We’re here for you and your family every step of the way."/></a> </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        <uc1:SlideMain ID="SlideMain1" runat="server" />    
+
       <div class="col12">
+
         <div class="box padd10">
           <div class="nameL" id="About Us"></div>
           <h2 class="headingBox"><span>About Us</span>
@@ -46,6 +30,7 @@
           </div>
         </div>
         <!--End Box-->
+
         <div class="box padd10">
           <div class="nameL" id="Consumers"></div>
           <h2 class="headingBox" ><span>Consumers</span>
@@ -131,6 +116,7 @@
           </div>
         </div>
         <!--End Box-->
+
         <div class="box padd10">
           <div class="nameL" id="Telehealth Solutions"></div>
           <h2 class="headingBox" ><span>Telehealth Solutions</span>
@@ -216,6 +202,7 @@
           </div>
         </div>
         <!--End Box-->
+
         <div class="box padd10">
           <div class="nameL" id="Last News"></div>
           <h2 class="headingBox"  ><span>Last News</span>
