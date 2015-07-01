@@ -248,7 +248,7 @@
                     </asp:RadioButtonList>
                 </td>
             </tr>
-             <tr style="height: 20px;" style="display:none">
+             <tr style="height: 20px;display:none">
                 <th valign="top" class="left">
                     Language
                 </th>
