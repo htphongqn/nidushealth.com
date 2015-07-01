@@ -195,8 +195,9 @@
                 </th>
                 <td height="25">
                     <asp:RadioButtonList ID="rblCatType" runat="server" RepeatColumns="5">
-                        <asp:ListItem Text="New" Value="0" Selected="True"></asp:ListItem>
-                        <%--<asp:ListItem Text="Product" Value="1"></asp:ListItem>--%>
+                        <asp:ListItem Text="News" Value="0" Selected="True"></asp:ListItem>
+                        <asp:ListItem Text="LastNews" Value="3"></asp:ListItem>
+                        <asp:ListItem Text="About" Value="4"></asp:ListItem>
                         <asp:ListItem Text="Other" Value="2"></asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
@@ -247,7 +248,7 @@
                     </asp:RadioButtonList>
                 </td>
             </tr>
-             <tr style="height: 20px;">
+             <tr style="height: 20px;" style="display:none">
                 <th valign="top" class="left">
                     Language
                 </th>
