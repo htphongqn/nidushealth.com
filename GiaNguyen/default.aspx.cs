@@ -52,29 +52,49 @@ namespace nidushealth.com
                 headerKey.Content = "Enews Standard V1.0";
                 header.Controls.Add(headerKey);
             }
-            Load_Menu1();
-            Loadlist_news();
+            Load_CatLastNew();
+            Load_CatMain();
+            Load_CatAbout();
         }
 
         #region Load data
-        public void Loadlist_news()
-        {
-            var list = index.Loadindex(0, 1, 10);
-            rptLastnew.DataSource = list;
-            rptLastnew.DataBind();
-        }
-        protected void Load_Menu1()
+        public void Load_CatAbout()
         {
             try
             {
-                rptCatMain.DataSource = index.Load_cate_index_all(4);
+                var list = index.Load_cate_index(10, 4);
+                rptCatAbout.DataSource = list;
+                rptCatAbout.DataBind();
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+            }
+        }
+        protected void Load_CatMain()
+        {
+            try
+            {
+                rptCatMain.DataSource = index.Load_cate_index(10, 0);
                 rptCatMain.DataBind();
             }
             catch (Exception ex)
             {
                 clsVproErrorHandler.HandlerError(ex);
             }
-
+        }
+        public void Load_CatLastNew()
+        {
+            try
+            {
+                var list = index.Load_cate_index(10, 3);
+                rptCatLastNews.DataSource = list;
+                rptCatLastNews.DataBind();
+            }
+            catch (Exception ex)
+            {
+                clsVproErrorHandler.HandlerError(ex);
+            }
         }
         protected IQueryable Load_Menu2(object cat_parent_id)
         {

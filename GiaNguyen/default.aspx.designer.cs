@@ -31,6 +31,15 @@ namespace nidushealth.com {
         protected global::nidushealth.com.UIs.SlideMain SlideMain1;
         
         /// <summary>
+        /// rptCatAbout control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Repeater rptCatAbout;
+        
+        /// <summary>
         /// rptCatMain control.
         /// </summary>
         /// <remarks>
@@ -40,12 +49,12 @@ namespace nidushealth.com {
         protected global::System.Web.UI.WebControls.Repeater rptCatMain;
         
         /// <summary>
-        /// rptLastnew control.
+        /// rptCatLastNews control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater rptLastnew;
+        protected global::System.Web.UI.WebControls.Repeater rptCatLastNews;
     }
 }

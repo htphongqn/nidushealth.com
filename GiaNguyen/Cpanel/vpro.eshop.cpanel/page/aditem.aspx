@@ -200,7 +200,7 @@
                     <uc1:pickerAndCalendar ID="ucToDate" runat="server" />
                 </td>
             </tr>
-            <tr style="height: 20px;">
+            <tr style="height: 20px;display:none">
                 <th valign="top" class="left">
                     Language
                 </th>
