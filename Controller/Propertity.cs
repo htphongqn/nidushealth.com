@@ -427,17 +427,17 @@ namespace Controller
 
                     if (str.Count() > 1)
                     {
-                        _result = Convert_Name(str) + "<span class='spSeperator'></span><a href='/" + rausach.ToList()[0].CAT_SEO_URL + ".html' class='aLink1'>" + rausach.ToList()[0].CAT_NAME + "</a>";
+                        _result = Convert_Name(str) + "<li><a href='/" + rausach.ToList()[0].CAT_SEO_URL + ".html' class='aLink1'>" + rausach.ToList()[0].CAT_NAME + "</a></li>";
                     }
                     else
                     {
                         if (rausach.ToList()[0].CAT_SHOWITEM > 0)
                         {
-                            _result = "<a href='/" + rausach.ToList()[0].CAT_SEO_URL + ".html' class='aLink1'>" + rausach.ToList()[0].CAT_NAME + "</a> ";
+                            _result = "<li><a href='/" + rausach.ToList()[0].CAT_SEO_URL + ".html' class='aLink1'>" + rausach.ToList()[0].CAT_NAME + "</a> </li>";
                         }
                         else
                         {
-                            _result = "<a href='/" + rausach.ToList()[0].CAT_SEO_URL + ".html' class='aLink1'>" + rausach.ToList()[0].CAT_NAME + "</a> ";
+                            _result = "<li><a href='/" + rausach.ToList()[0].CAT_SEO_URL + ".html' class='aLink1'>" + rausach.ToList()[0].CAT_NAME + "</a> </li>";
                         }
                     }
                 }
@@ -457,17 +457,17 @@ namespace Controller
                         string[] str = cat_parent_path_Max.Split(',');
                         if (str.Count() > 1)
                         {
-                            _result = Convert_Name(str) + "<span class='spSeperator'></span><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a>";
+                            _result = Convert_Name(str) + "<li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li>";
                         }
                         else
                         {
                             if (rausach1.ToList()[0].CAT_SHOWITEM > 0)
                             {
-                                _result = "<a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a> ";
+                                _result = "<li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li>";
                             }
                             else
                             {
-                                _result = "<a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a> ";
+                                _result = "<li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li>";
                             }
                         }
 
