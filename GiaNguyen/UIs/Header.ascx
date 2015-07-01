@@ -11,6 +11,6 @@
             </div>
         </div>
         <div class="col4 fright hotline text-right">
-            24/7 HELPLINE<b><asp:Literal ID="lblHotline" runat="server"></asp:Literal></b> 
+            24/7 HELPLINE <b><asp:Literal ID="lblHotline" runat="server"></asp:Literal></b> 
         </div>
     </div>
