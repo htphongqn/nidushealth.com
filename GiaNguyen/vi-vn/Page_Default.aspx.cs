@@ -33,7 +33,7 @@ namespace nidushealth.com.vi_vn
                 //UserControl prodetails = Page.LoadControl("../UIs/ProjectDetail.ascx") as UserControl;
                 UserControl list_news = Page.LoadControl("../UIs/ListNews.ascx") as UserControl;
                 UserControl details_news = Page.LoadControl("../UIs/NewsDetail.ascx") as UserControl;
-                UserControl search = Page.LoadControl("../UIs/Search.ascx") as UserControl;
+                //UserControl search = Page.LoadControl("../UIs/Search.ascx") as UserControl;
                 int _type = Utils.CIntDef(Request["type"]);
                 string _catSeoUrl = Utils.CStrDef(Request.QueryString["curl"]);
                 string _newsSeoUrl = Utils.CStrDef(Request.QueryString["purl"]);
@@ -57,11 +57,11 @@ namespace nidushealth.com.vi_vn
                             else phdMain.Controls.Add(list_news);
                         }
                         break;
-                    case 5:
-                        phdMain.Controls.Add(search);
-                        HtmlHead header = base.Header;
-                        header.Title = "Tìm kiếm";
-                        break;
+                    //case 5:
+                    //    phdMain.Controls.Add(search);
+                    //    HtmlHead header = base.Header;
+                    //    header.Title = "Tìm kiếm";
+                    //    break;
                     case 6:
                         getsession.LoadNewsInfo(_newsSeoUrl);
                         Bind_meta_tags_news();
