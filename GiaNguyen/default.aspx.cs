@@ -181,7 +181,7 @@ namespace nidushealth.com
 
             try
             {
-                return fun.GetImageT_News(News_Id, News_Image1);
+                return fun.GetImageT_News1(News_Id, News_Image1);
             }
             catch (Exception ex)
             {
