@@ -46,18 +46,16 @@ namespace Controller
             return _result;
         }
         //Insert contact
-        public bool Insert_contact(string name, string email, string title, string content, string address, string phone,string company)
+        public bool Insert_contact(string name, string email, string address, string phone, string content)
         {
             ESHOP_CONTACT add = new ESHOP_CONTACT
             {
                 CONTACT_NAME = name,
                 CONTACT_EMAIL = email,
-                CONTACT_TITLE = title,
                 CONTACT_CONTENT = content,
                 CONTACT_PUBLISHDATE = DateTime.Now,
                 CONTACT_ADDRESS = address,
                 CONTACT_PHONE = phone,
-                CONTACT_ATT1 = company,
                 CONTACT_TYPE = 0
             };
             db.ESHOP_CONTACTs.InsertOnSubmit(add);

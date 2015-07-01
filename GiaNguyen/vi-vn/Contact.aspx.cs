@@ -22,7 +22,7 @@ namespace nidushealth.com.vi_vn
         {
             if (!IsPostBack)
             {
-                Show_File_HTML("contact-vi.htm");
+                //Show_File_HTML("contact-vi.htm");
             }
             var _configs = cf.Config_meta();
 
@@ -38,70 +38,54 @@ namespace nidushealth.com.vi_vn
             headerDes.Name = "Description";
             headerKey.Name = "Keywords";
 
-            header.Title = "Liên hệ";
+            header.Title = "Contact";
         }
-        private void Show_File_HTML(string HtmlFile)
-        {
-            string pathFile;
-            string strHTMLContent;
-            pathFile = Server.MapPath("../Data/contact/" + HtmlFile);
+        //private void Show_File_HTML(string HtmlFile)
+        //{
+        //    string pathFile;
+        //    string strHTMLContent;
+        //    pathFile = Server.MapPath("../Data/contact/" + HtmlFile);
 
-            if ((File.Exists(pathFile)))
-            {
-                StreamReader objNewsReader;
-                objNewsReader = new StreamReader(pathFile);
-                strHTMLContent = objNewsReader.ReadToEnd();
-                objNewsReader.Close();
+        //    if ((File.Exists(pathFile)))
+        //    {
+        //        StreamReader objNewsReader;
+        //        objNewsReader = new StreamReader(pathFile);
+        //        strHTMLContent = objNewsReader.ReadToEnd();
+        //        objNewsReader.Close();
 
-                Literal1.Text = strHTMLContent;
-            }
-            else
-                Literal1.Text = "";
+        //        Literal1.Text = strHTMLContent;
+        //    }
+        //    else
+        //        Literal1.Text = "";
 
-        }
+        //}
 
-
-        protected void Lbthanhtoan_Click(object sender, EventArgs e)
+        protected void btnSubmit_Click(object sender, EventArgs e)
         {
             try
             {
-
-                if (this.txtCapcha.Value != this.Session["CaptchaImageText"].ToString())
-                {
-                    string strScript = "<script>";
-                    strScript += "alert(' Mã bảo vệ không đúng!');";
-                    strScript += "</script>";
-                    Page.RegisterClientScriptBlock("strScript", strScript);
-                }
-                else
-                {
-
-                    string _sEmailCC = string.Empty;
-                    string _sEmail = txtEmail.Value;
-                    string _sName = Txtname.Value;
-                    string _add = Txtaddress.Value;
-                    string _phone = Txtphone.Value;
-                    string _content = txtContent.Value;
-                    string _title = txttitle.Value;
-                    string _company = txtCompany.Value;
-                    cf.Insert_contact(_sName, _sEmail, _title, _content, _add, _phone,_company);
-                    string _mailBody = string.Empty;
-                    _mailBody += "<br/><br/><strong>Tên khách hàng</strong>: " + _sName;
-                    _mailBody += "<br/><br/><strong>Email</strong>: " + _sEmail;
-                    _mailBody += "<br/><br/><strong>Số điện thoại</strong>: " + _phone;
-                    _mailBody += "<br/><br/><strong>Địa chỉ</strong>: " + _add;
-                    _mailBody += "<br/><br/><strong>Tiêu đề</strong>: " + _title;
-                    _mailBody += "<br/><br/><strong>Nội dung</strong>: " + _content + "<br/><br/>";
-                    string _sMailBody = string.Empty;
-                    _sMailBody += "Cám ơn quý khách: " + _sName + " đã đặt liên hệ với chúng tôi. Đây là email được gửi từ website của " + System.Configuration.ConfigurationManager.AppSettings["EmailDisplayName"] + " <br>" + _mailBody;
-                    _sEmailCC = cf.Getemail(2).Count > 0 ? cf.Getemail(2)[0].EMAIL_TO : "";
-                    sm.SendEmailSMTP("Thông báo: Bạn đã liên hệ thành công", _sEmail, _sEmailCC, "", _sMailBody, true, false);
-                    string strScript = "<script>";
-                    strScript += "alert(' Đã gửi thành công!');";
-                    strScript += "window.location='/';";
-                    strScript += "</script>";
-                    Page.RegisterClientScriptBlock("strScript", strScript);
-                }
+            string _sEmailCC = string.Empty;
+            string _sEmail = txtEmail.Value;
+            string _sName = txtLastName.Value + " " + txtFirstName.Value;
+            string _phone = txtPhone.Value;
+            string _content = txtContent.Value;
+            string _add = txtAddress.Value;
+            cf.Insert_contact(_sName, _sEmail, _add, _phone,  _content);
+            //string _mailBody = string.Empty;
+            //_mailBody += "<br/><br/><strong>Tên khách hàng</strong>: " + _sName;
+            //_mailBody += "<br/><br/><strong>Email</strong>: " + _sEmail;
+            //_mailBody += "<br/><br/><strong>Số điện thoại</strong>: " + _phone;
+            //_mailBody += "<br/><br/><strong>Địa chỉ</strong>: " + _add;
+            //_mailBody += "<br/><br/><strong>Nội dung</strong>: " + _content + "<br/><br/>";
+            //string _sMailBody = string.Empty;
+            //_sMailBody += "Cám ơn quý khách: " + _sName + " đã đặt liên hệ với chúng tôi. Đây là email được gửi từ website của " + System.Configuration.ConfigurationManager.AppSettings["EmailDisplayName"] + " <br>" + _mailBody;
+            //_sEmailCC = cf.Getemail(2).Count > 0 ? cf.Getemail(2)[0].EMAIL_TO : "";
+            //sm.SendEmailSMTP("Thông báo: Bạn đã liên hệ thành công", _sEmail, _sEmailCC, "", _sMailBody, true, false);
+            string strScript = "<script>";
+            strScript += "alert(' Thank you for your request for us!');";
+            strScript += "window.location='/';";
+            strScript += "</script>";
+            Page.RegisterClientScriptBlock("strScript", strScript);
             }
             catch (Exception ex)
             {

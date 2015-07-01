@@ -22,49 +22,40 @@ namespace nidushealth.com.vi_vn {
         protected global::System.Web.UI.WebControls.Literal ltrFavicon;
         
         /// <summary>
-        /// Txtname control.
+        /// SlideDetail1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Txtname;
+        protected global::nidushealth.com.UIs.SlideDetail SlideDetail1;
         
         /// <summary>
-        /// rfvHoVaTen control.
+        /// txtFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvHoVaTen;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtFirstName;
         
         /// <summary>
-        /// txtCompany control.
+        /// rfvFirstName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCompany;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvFirstName;
         
         /// <summary>
-        /// Txtaddress control.
+        /// txtLastName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Txtaddress;
-        
-        /// <summary>
-        /// Txtphone control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText Txtphone;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtLastName;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -94,13 +85,13 @@ namespace nidushealth.com.vi_vn {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
         
         /// <summary>
-        /// txttitle control.
+        /// txtPhone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txttitle;
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtPhone;
         
         /// <summary>
         /// RequiredFieldValidator3 control.
@@ -112,6 +103,15 @@ namespace nidushealth.com.vi_vn {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
+        /// txtAddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText txtAddress;
+        
+        /// <summary>
         /// txtContent control.
         /// </summary>
         /// <remarks>
@@ -121,40 +121,22 @@ namespace nidushealth.com.vi_vn {
         protected global::System.Web.UI.HtmlControls.HtmlTextArea txtContent;
         
         /// <summary>
-        /// rfvContent control.
+        /// RequiredFieldValidator4 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvContent;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
-        /// txtCapcha control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText txtCapcha;
-        
-        /// <summary>
-        /// rfvCaptcha control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCaptcha;
-        
-        /// <summary>
-        /// Lbthanhtoan control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton Lbthanhtoan;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
         
         /// <summary>
         /// ValidationSummary1 control.
@@ -166,39 +148,21 @@ namespace nidushealth.com.vi_vn {
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
         
         /// <summary>
-        /// RegularExpressionValidator1 control.
+        /// CategoriesRight1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        protected global::nidushealth.com.UIs.CategoriesRight CategoriesRight1;
         
         /// <summary>
-        /// RegularExpressionValidator2 control.
+        /// NewsRight1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
-        
-        /// <summary>
-        /// Literal1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal Literal1;
+        protected global::nidushealth.com.UIs.NewsRight NewsRight1;
     }
 }

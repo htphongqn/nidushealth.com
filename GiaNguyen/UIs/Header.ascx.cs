@@ -48,7 +48,7 @@ namespace nidushealth.com.UIs
             var list = per.Load_hotline().Take(2).ToList();
             for (int i = 0; i < list.Count; i++)
             {
-                lblHotline.Text += list[i].ONLINE_NICKNAME;
+                lblHotline.Text += list[i].ONLINE_FIELD2;
             }
         }
     }

@@ -89,7 +89,8 @@
                     Type
                 </th>
                 <td height="25">
-                    <asp:RadioButtonList ID="rblType" runat="server" RepeatColumns="5">
+                    <asp:RadioButtonList ID="rblType" runat="server" RepeatColumns="5" 
+                        AutoPostBack="True" onselectedindexchanged="rblType_SelectedIndexChanged">
                         <asp:ListItem Selected="True" Value="0" Text="Yahoo"></asp:ListItem>                       
                         <asp:ListItem Value="1" Text="Skype"></asp:ListItem>
                         <asp:ListItem Value="2" Text="Hotline"></asp:ListItem>
