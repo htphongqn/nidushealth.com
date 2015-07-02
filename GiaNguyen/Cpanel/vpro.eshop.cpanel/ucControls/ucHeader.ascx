@@ -3,7 +3,7 @@
 <div id="outer">
     <div id="logo">
     <a href="../page/default.aspx">
-        <img src="../Images/logo_t.png" alt="" style="border: none;width:400px"/></a>
+        <img src="../Images/logo_t.png" alt="" style="border: none;width:250px"/></a>
     </div>
     <!-- InstanceBeginEditable name="Title" -->
     <div id="menu_main" style="display:none;">
