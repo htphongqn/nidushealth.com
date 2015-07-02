@@ -7,7 +7,6 @@ using System.Web.UI.WebControls;
 using Controller;
 using System.Web.UI.HtmlControls;
 using vpro.functions;
-using Controller;
 using Model;
 
 namespace nidushealth.com
@@ -181,7 +180,7 @@ namespace nidushealth.com
 
             try
             {
-                return fun.GetImageT_News(News_Id, News_Image1);
+                return fun.GetImageT_News1(News_Id, News_Image1);
             }
             catch (Exception ex)
             {
