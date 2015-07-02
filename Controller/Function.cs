@@ -20,11 +20,11 @@ namespace Controller
         public string Getprice(object Price)
         {
             decimal _dPrice = Utils.CDecDef(Price);
-            return _dPrice != 0 ? String.Format("{0:0,0 VNĐ}", _dPrice) : "Liên hệ";
+            return _dPrice != 0 ? String.Format("{0:0,0 VNĐ}", _dPrice) : "Contact";
         }
         public string getDate(object News_PublishDate)
         {
-            return string.Format("{0:MM/dd/yyyy}", News_PublishDate);
+            return string.Format("{0:MMM d, yyyy}", News_PublishDate);
         }
         public string GetImageT_News(object News_Id, object News_Image1)
         {
