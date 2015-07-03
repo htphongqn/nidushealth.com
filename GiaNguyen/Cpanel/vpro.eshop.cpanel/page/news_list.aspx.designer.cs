@@ -13,15 +13,6 @@ namespace vpro.eshop.cpanel.page {
     public partial class news_list {
         
         /// <summary>
-        /// ilinkNews control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor ilinkNews;
-        
-        /// <summary>
         /// dvDelete control.
         /// </summary>
         /// <remarks>
@@ -56,6 +47,15 @@ namespace vpro.eshop.cpanel.page {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtSearch;
+        
+        /// <summary>
+        /// Ddnguon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList Ddnguon;
         
         /// <summary>
         /// ddlCategory control.

@@ -13,6 +13,15 @@ namespace vpro.eshop.cpanel.page {
     public partial class news_attachment {
         
         /// <summary>
+        /// lbtHelp control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtHelp;
+        
+        /// <summary>
         /// dvDelete control.
         /// </summary>
         /// <remarks>

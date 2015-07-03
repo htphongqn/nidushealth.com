@@ -20,7 +20,6 @@ namespace vpro.eshop.cpanel.page
         private int m_att_id = 0;
         private int m_news_id = 0;
         private int _count = 0;
-        int _cat_type = 0;
         eshopdbDataContext DB = new eshopdbDataContext();
 
         #endregion
@@ -31,9 +30,8 @@ namespace vpro.eshop.cpanel.page
         {
             m_att_id = Utils.CIntDef(Request["att_id"]);
             m_news_id = Utils.CIntDef(Request["news_id"]);
-            if (Request.QueryString["type"] == "1") _cat_type = 1;
 
-            hplBack.HRef = "news.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
+            hplBack.HRef = "news.aspx?news_id=" + m_news_id;
 
             if (m_att_id == 0)
             {
@@ -43,9 +41,9 @@ namespace vpro.eshop.cpanel.page
 
             if (!IsPostBack)
             {
-                ucHeader.HeaderLevel1 = "Product - New";
+                ucHeader.HeaderLevel1 = "News - Products";
                 ucHeader.HeaderLevel1_Url = "../page/news_list.aspx";
-                ucHeader.HeaderLevel2 = "File đính kèm";
+                ucHeader.HeaderLevel2 = "Attachment";
                 ucHeader.HeaderLevel2_Url = "../page/news_attachment.aspx";
 
                 getInfo();
@@ -54,12 +52,12 @@ namespace vpro.eshop.cpanel.page
 
                 txtKeyword.Attributes.Add("onKeyPress", Common.getSubmitScript(lbtSearch.ClientID));
             }
-            hplCatNews.HRef = "news_category.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
-            hplEditorHTMl.HRef = "news_editor.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
-            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
-            hplAlbum.HRef = "news_images.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
-            bplNewsCopy.HRef = "news_copy.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
-            hplComment.HRef = "news_comment.aspx?news_id=" + m_news_id + "&type=" + _cat_type;
+            hplCatNews.HRef = "news_category.aspx?news_id=" + m_news_id;
+            hplEditorHTMl.HRef = "news_editor.aspx?news_id=" + m_news_id;
+            hplNewsAtt.HRef = "news_attachment.aspx?news_id=" + m_news_id;
+            hplAlbum.HRef = "news_images.aspx?news_id=" + m_news_id;
+            bplNewsCopy.HRef = "news_copy.aspx?news_id=" + m_news_id;
+            hplComment.HRef = "news_comment.aspx?news_id=" + m_news_id;
             //hplCatProducts.HRef = "news_news.aspx?news_id=" + m_news_id;
 
 
@@ -100,7 +98,7 @@ namespace vpro.eshop.cpanel.page
                         if (File.Exists(imagePath))
                             File.Delete(imagePath);
 
-                        strLink = "news_attachment.aspx?att_id=" + m_att_id + "&news_id=" + m_news_id + "&type=" + _cat_type;
+                        strLink = "news_attachment.aspx?att_id=" + m_att_id + "&news_id=" + m_news_id;
                     }
                 }
             }
@@ -209,7 +207,7 @@ namespace vpro.eshop.cpanel.page
 
                     m_att_id = _new.Single().NEWS_ATT_ID;
 
-                    strLink = string.IsNullOrEmpty(strLink) ? "news_attachment.aspx?news_id=" + m_news_id + "&type=" + _cat_type : strLink;
+                    strLink = string.IsNullOrEmpty(strLink) ? "news_attachment.aspx?news_id=" + m_news_id : strLink;
                 }
                 else
                 {
@@ -227,7 +225,7 @@ namespace vpro.eshop.cpanel.page
 
                         DB.SubmitChanges();
 
-                        strLink = string.IsNullOrEmpty(strLink) ? "news_attachment.aspx?news_id=" + m_news_id + "&type=" + _cat_type : strLink;
+                        strLink = string.IsNullOrEmpty(strLink) ? "news_attachment.aspx?news_id=" + m_news_id : strLink;
                     }
                 }
 
@@ -327,7 +325,7 @@ namespace vpro.eshop.cpanel.page
 
         public string getLink(object obj_id)
         {
-            return "news_attachment.aspx?news_id=" + m_news_id + "&att_id=" + Utils.CStrDef(obj_id) + "&type=" + _cat_type;
+            return "news_attachment.aspx?news_id=" + m_news_id + "&att_id=" + Utils.CStrDef(obj_id);
         }
 
         private void SearchResult()
@@ -429,7 +427,7 @@ namespace vpro.eshop.cpanel.page
         {
             if ((((e.Item.ItemType == ListItemType.Item) | (e.Item.ItemType == ListItemType.AlternatingItem)) | (e.Item.ItemType == ListItemType.SelectedItem)))
             {
-                e.Item.Cells[3].Attributes.Add("onClick", "return confirm('Do you want delete?');");
+                e.Item.Cells[3].Attributes.Add("onClick", "return confirm('Do you want to delete?');");
             }
 
         }

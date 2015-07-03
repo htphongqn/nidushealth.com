@@ -224,12 +224,13 @@
                     Type
                 </th>
                 <td height="25">
-                    <%--<asp:RadioButtonList ID="rblNewsType" runat="server" RepeatColumns="5" AutoPostBack="True"
+                    <asp:RadioButtonList ID="rblNewsType" runat="server" RepeatColumns="5" AutoPostBack="True"
                         OnSelectedIndexChanged="rblNewsType_SelectedIndexChanged">
                         <asp:ListItem Text="New" Value="0"></asp:ListItem>
-                        <asp:ListItem Text="Product" Value="1" Selected="True"></asp:ListItem>
-                        <asp:ListItem Text="Khác" Value="2"></asp:ListItem>
-                    </asp:RadioButtonList>--%>
+                        <asp:ListItem Text="LastNews" Value="3"></asp:ListItem>
+                        <asp:ListItem Text="About" Value="4"></asp:ListItem>
+                        <asp:ListItem Text="Other" Value="2"></asp:ListItem>
+                    </asp:RadioButtonList>
                     <asp:Label ID="liTitleNew" runat="server" Font-Bold="true" Font-Size="15px"></asp:Label>
                 </td>
             </tr>

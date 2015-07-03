@@ -31,15 +31,6 @@ namespace vpro.eshop.cpanel.page {
         protected global::System.Web.UI.WebControls.LinkButton lbtDelete;
         
         /// <summary>
-        /// hplBack control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlAnchor hplBack;
-        
-        /// <summary>
         /// Lnupload control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace vpro.eshop.cpanel.page {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton Lnupload;
+        
+        /// <summary>
+        /// hplBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor hplBack;
         
         /// <summary>
         /// trNewsFunction control.

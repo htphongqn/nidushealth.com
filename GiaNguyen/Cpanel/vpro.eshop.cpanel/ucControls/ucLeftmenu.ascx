@@ -113,13 +113,13 @@
         <i class="iedit"></i><a href="news.aspx?type=0">Add New</a>
 	</span>
 
-    <div class="menutitle" onclick="SwitchMenu('sub3')">
+    <%--<div class="menutitle" onclick="SwitchMenu('sub3')">
         <img src="../Images/Button_Admin/c_products.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
         Products</div>
 	<span class="submenu" id="sub3">
 		<i class="ilist"></i><a href="news_list.aspx?type=1">List Products</a><br />
         <i class="iedit"></i><a href="news.aspx?type=1">Add Product</a>
-	</span>
+	</span>--%>
 
     <div class="menutitle" onclick="SwitchMenu('sub4')">
         <img src="../Images/Button_Admin/advertising.png" width="15" height="15" style="padding-right: 5px;border: 0px;" />
