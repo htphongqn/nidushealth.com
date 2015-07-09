@@ -63,7 +63,7 @@
                     <div id="menu_content">
                         View information from the customer contact sent from the website.</div>
                 </div>
-                <div id="menu_child">
+                <div id="menu_child" style="display:none;">
                     <div id="menu_images">
                         <img src="../Images/app_product.png" width="70" height="70" /></div>
                     <div id="menu_title">

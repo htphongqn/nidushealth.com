@@ -457,17 +457,17 @@ namespace Controller
                         string[] str = cat_parent_path_Max.Split(',');
                         if (str.Count() > 1)
                         {
-                            _result = Convert_Name(str) + "<li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li>";
+                            _result = Convert_Name(str) + "<span><li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li></span>";
                         }
                         else
                         {
                             if (rausach1.ToList()[0].CAT_SHOWITEM > 0)
                             {
-                                _result = "<li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li>";
+                                _result = "<span><li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li></span>";
                             }
                             else
                             {
-                                _result = "<li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li>";
+                                _result = "<span><li><a href='/" + rausach1.ToList()[0].CAT_SEO_URL + ".html'>" + rausach1.ToList()[0].CAT_NAME + "</a></li></span>";
                             }
                         }
 

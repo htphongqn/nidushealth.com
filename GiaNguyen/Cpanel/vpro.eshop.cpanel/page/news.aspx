@@ -219,7 +219,7 @@
                     <asp:Label CssClass="user" ID="lblError" runat="server"></asp:Label>
                 </td>
             </tr>
-            <tr style="height: 20px;">
+            <tr style="height: 20px;display:none;">
                 <th valign="top" class="left">
                     Type
                 </th>
