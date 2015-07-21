@@ -36,12 +36,12 @@ namespace nidushealth.com.UIs
 
         #region Function
 
-        public string GetImageAd(object Ad_Id, object Ad_Image1, object Ad_Target, object Ad_Url)
+        public string GetImageAd(object Ad_Id, object Ad_Image1, object Ad_Target, object Ad_Url, object AD_ITEM_DESC)
         {
             try
             {
                 string temp;
-                temp = fun.GetImageAd(Ad_Id, Ad_Image1, Ad_Target, Ad_Url);
+                temp = fun.GetImageAd(Ad_Id, Ad_Image1, Ad_Target, Ad_Url, AD_ITEM_DESC);
                 return temp;
             }
             catch (Exception ex)

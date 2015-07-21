@@ -14,7 +14,7 @@
         <div id="slider" class="nivoSlider">            
             <asp:Repeater ID="Rpslider" runat="server">
                 <ItemTemplate>
-                    <div class="itemSlide"> <%# GetImageAd(Eval("AD_ITEM_ID"), Eval("AD_ITEM_FILENAME"), Eval("AD_ITEM_TARGET"), Eval("AD_ITEM_URL"))%> </div>
+                    <div class="itemSlide"> <%# GetImageAd(Eval("AD_ITEM_ID"), Eval("AD_ITEM_FILENAME"), Eval("AD_ITEM_TARGET"), Eval("AD_ITEM_URL"), Eval("AD_ITEM_DESC"))%> </div>
                 </ItemTemplate>
             </asp:Repeater>
         </div>

@@ -97,12 +97,12 @@ namespace Controller
                 return "";
             }
         }
-        public string GetImageAd(object Ad_Id, object Ad_Image1, object Ad_Target, object Ad_Url)
+        public string GetImageAd(object Ad_Id, object Ad_Image1, object Ad_Target, object Ad_Url, object AD_ITEM_DESC)
         {
             try
             {
                 if (Utils.CIntDef(Ad_Id) > 0 && !string.IsNullOrEmpty(Utils.CStrDef(Ad_Image1)))
-                    return "<a href='" + Utils.CStrDef(Ad_Url) + "' target='" + Utils.CStrDef(Ad_Target) + "'><img src='" + PathFiles.GetPathAdItems(Utils.CIntDef(Ad_Id)) + Utils.CStrDef(Ad_Image1) + "' alt='' /></a>";
+                    return "<a href='" + Utils.CStrDef(Ad_Url) + "' target='" + Utils.CStrDef(Ad_Target) + "'><img src='" + PathFiles.GetPathAdItems(Utils.CIntDef(Ad_Id)) + Utils.CStrDef(Ad_Image1) + "' title='" + Utils.CStrDef(AD_ITEM_DESC) + "' alt='' /></a>";
                 return "";
             }
             catch (Exception ex)
